@@ -3,7 +3,7 @@
 #include <time.h>
 
 int main()
-{   int dim=14;
+{   int dim=14, i;
     float x=0, y=1, summin=0, summax=0, n=0, m=0, array[dim];
                                 /* dim- розмір масиву,
                                 summin - сума мінімальних значень
@@ -19,8 +19,10 @@ int main()
     }
     
     printf("Заданий масив\n");
-    for (int i =0; i<dim; i++){
+    i=0;
+    while(i<dim){
         printf("Елемент номер[%i] = %.2f\n",i, array[i]);
+        i++;
     }
     
     for (int i =0; i<dim; i++){
@@ -53,8 +55,10 @@ int main()
     }
     
     printf("Новоутворений масив\n");
-    for (int i =0; i<dim; i++){
+    i=0;
+    while(i<dim){
         printf("Елемент номер[%i] = %.2f\n",i, array[i]);
+        i++;
     }
         
    
