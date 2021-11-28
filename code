@@ -11,5 +11,17 @@ int main()
         array[i]=100-rand()%200;
     }
 
+    printf("Заданий масив\n");
+
+    for (int i =0; i<dim; i++){
+        printf("Елемент номер[%i] = %.0f\n",i, array[i]);
+    }
+
+     printf("Новоутворений масив\n");
+
+    for (int i =0; i<dim; i++){
+        printf("Елемент номер[%i] = %.0f\n",i, array[i]);
+    }
+
     return 0;
 }
