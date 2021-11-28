@@ -3,7 +3,9 @@
 #include <time.h>
 
 int main()
-{   int dim=14;
+{   int dim;
+    printf("Розмір масиву = ");
+    scanf("%d",&dim);
     float x=0, y=1, summin=0, summax=0, n=0, m=0, array[dim];
                                 /* dim- розмір масиву,
                                 summin - сума мінімальних значень
@@ -12,10 +14,12 @@ int main()
                                 y - середнє значень всіх додатніх значень,
                                 n - кількість знайдених від'ємних елементів 
                                 m - кількість знайдених додатніх елементів*/
-    srand ( time(NULL) );
+    
+    
     
     for (int i =0; i<dim; i++){
-        array[i]=100-rand()%200;
+        printf("Елемент номер[%i] = ", i);
+        scanf("%f",&array[i]);
     }
     
     printf("Заданий масив\n");
