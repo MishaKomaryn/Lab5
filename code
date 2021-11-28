@@ -3,8 +3,8 @@
 #include <time.h>
 
 int main()
-{   int dim=14;
-    float x=0, y=1, summin=0, summax=0, n=0, m=0, array[dim];
+{   int dim;
+    float x=0, y=1, summin=0, summax=0, n=0, m=0;
                                 /* dim- розмір масиву,
                                 summin - сума мінімальних значень
                                 summax - сума максимальних значень
@@ -14,6 +14,10 @@ int main()
                                 m - кількість знайдених додатніх елементів*/
     srand ( time(NULL) );
     
+    printf("Input DIM = ");
+     scanf("%i", &dim);
+    
+    float array[dim];
     for (int i =0; i<dim; i++){
         array[i]=100-rand()%200;
     }
